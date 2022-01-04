@@ -1,0 +1,72 @@
+.home-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "home-left home-right";
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #000000;
+}
+.home-left {
+  color: white;
+  /* width: 30%; */
+  grid-area: home-left;
+}
+.home-left h5 {
+  font-size: 17px;
+  padding: 3rem 0 0;
+}
+.home-left h1 {
+  font-size: 60px;
+  line-height: 7rem;
+  padding: 3rem 0;
+  font-weight: normal;
+}
+.home-left p {
+  font-size: 15px;
+  padding-bottom: 3rem;
+}
+
+.home-left button {
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  width: 18%;
+  cursor: pointer;
+}
+.home-left button:hover {
+  background-color: rgb(221, 44, 44);
+}
+.home-right {
+  grid-area: home-right;
+}
+.home-right img {
+  width: 750px;
+  padding: 2rem;
+}
+@media screen and (max-width: 925px) {
+  .home-container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "home-left"
+      "home-right";
+    justify-content: center;
+    align-items: center;
+  }
+  .home-left {
+    width: 80%;
+    justify-self: center;
+  }
+  .home-right img {
+    width: 80%;
+    padding-top: 4rem;
+    margin: auto;
+  }
+  .home-left button {
+    width: 50%;
+  }
+}

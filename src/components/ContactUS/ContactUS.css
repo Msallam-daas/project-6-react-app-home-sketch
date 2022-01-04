@@ -1,0 +1,75 @@
+.fromContainer {
+  max-width: 45%;
+  margin: 25px auto;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+#contactForm {
+  background-color: #24253c;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 2rem 1rem 2rem 1rem;
+  border-radius: 1rem;
+}
+
+.form-wrap {
+  padding: 15px 20px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrap h1 {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-wrap .formGroup {
+  margin-top: 0.5rem;
+}
+
+.form-wrap .formGroup label {
+  display: block;
+  color: white;
+  font-size: 2.25rem;
+}
+
+.form-wrap .formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 2rem;
+}
+
+.form-wrap .formGroup textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 2.25rem;
+}
+
+.form-wrap button {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 2rem 0;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 790px) {
+  .fromContainer {
+    max-width: 90%;
+  }
+}

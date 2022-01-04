@@ -1,0 +1,114 @@
+.personal-info {
+  grid-area: item1;
+}
+.cart-info {
+  grid-area: item2;
+}
+.reservations-info {
+  grid-area: item3;
+}
+.profileContainer {
+  display: grid;
+  grid-template-areas:
+    "item1    item2"
+    "item1    item3";
+}
+
+.sectionline {
+  display: block;
+  height: 3px;
+  margin: 5px auto 15px auto;
+  width: 80px;
+  background-color: #ef5921;
+}
+
+.personal-info h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.personalInofContainer {
+  background-color: rgba(36, 37, 60, 1);
+  padding: 2rem 3rem 2rem 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+.personal-info label {
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+}
+
+.personal-info input {
+  display: grid;
+  font-size: 1.5rem;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 45px;
+  background-color: #fff;
+  border: 1px solid #dcdcdc;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  margin-top: 0.5rem;
+}
+.cart-info h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.cartInfoContainer {
+  background-color: rgba(36, 37, 60, 1);
+  padding: 2rem 3rem 2rem 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+.cartInfoContainer p {
+  text-align: center;
+  font-size: 2rem;
+}
+.cartline {
+  display: block;
+  height: 1px;
+  margin: 5px auto 15px auto;
+  width: 150px;
+  background-color: #ef5921;
+}
+.reservations-info h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 1rem;
+}
+.reservations-info p {
+  text-align: center;
+  font-size: 2rem;
+}
+.reservationsInfoContainer {
+  background-color: rgba(36, 37, 60, 1);
+  padding: 2rem 1rem 2rem 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 5rem;
+  font-size: 2rem;
+}
+@media screen and (max-width: 751px) {
+  .profileContainer {
+    display: grid;
+    grid-template-areas:
+      "item1"
+      "item2"
+      "item3";
+  }
+}

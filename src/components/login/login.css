@@ -1,0 +1,59 @@
+.loginContainer form {
+  display: grid;
+  background-color: #24253c;
+  padding: 10rem 3rem 1rem 3rem;
+  margin: 5rem auto;
+  align-items: center;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.loginForm input {
+  width: 100%;
+  border: 1px solid #ef5921;
+  font-size: 1.75rem;
+  height: 6rem;
+  margin-bottom: 2rem;
+  border-radius: 25px;
+  background-color: #24253c;
+  padding: 1rem;
+  color: white;
+}
+.loginBtn {
+  background-color: #ef5921;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 2rem;
+  height: 6rem;
+}
+.loginBtn:hover {
+  background-color: rgb(221, 44, 44);
+}
+.signHeading {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.registerMsg {
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.loginRegister {
+  color: #ef5921;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+@media screen and (max-width: 753px) {
+  .loginContainer form {
+    width: 80%;
+  }
+  .registerMsg {
+    font-size: 1.5rem;
+  }
+}

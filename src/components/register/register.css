@@ -1,0 +1,62 @@
+.registerContainer form {
+  display: grid;
+  background-color: rgba(36, 37, 60, 1);
+  padding: 10rem 3rem 1rem 3rem;
+  margin: 5rem auto;
+  align-items: center;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.registerForm input {
+  width: 100%;
+  border: 1px solid #ef5921;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  height: 6rem;
+  border-radius: 25px;
+  background-color: rgba(36, 37, 60, 1);
+  padding: 1rem;
+  color: white;
+}
+
+.registerBtn {
+  background-color: #ef5921;
+  border-radius: 25px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin: 1rem 0;
+  font-size: 2rem;
+  height: 6rem;
+}
+.registerBtn:hover {
+  background-color: rgb(221, 44, 44);
+}
+.registerHeading {
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 3rem;
+  color: white;
+}
+.message {
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+.loginMsg {
+  font-size: 2rem;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+.registerLogin {
+  color: #ef5921;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+@media screen and (max-width: 753px) {
+  .registerContainer form {
+    width: 80%;
+  }
+}

@@ -1,0 +1,65 @@
+.featuredExercises {
+  display: grid;
+  grid-template-areas: "featuredExercisesContainer";
+}
+.featuredExercisesContainerPhoto {
+  width: 400px;
+  height: 400px;
+}
+.featuredExercisesContainerPhoto img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.featuredExercisesContainer {
+  display: grid;
+  grid-template-areas: "featuredExercisesContainerPhoto featuredExerciseDesc";
+  width: 60%;
+  margin: 2rem auto;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px;
+  justify-self: center;
+  text-align: center;
+  align-items: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+.featuredExercisesContainer:hover .featuredExercisesContainerPhoto img {
+  transform: scale(1.1);
+}
+.featuredExerciseTitle {
+  font-size: 3rem;
+}
+.featuredExerciseDesc {
+  font-size: 1.3rem;
+  width: 95%;
+  margin: 1rem auto;
+}
+.viewExerciseBtn {
+  width: 65%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1100px) {
+  .featuredExercisesContainerPhoto img {
+    width: 100%;
+    height: 200px;
+  }
+  .featuredExercisesContainerPhoto {
+    width: 100%;
+    height: 200px;
+  }
+  .featuredExercisesContainer {
+    grid-template-areas:
+      "featuredExercisesContainerPhoto"
+      "featuredExerciseDesc";
+  }
+  .viewExerciseBtn {
+    width: 100%;
+  }
+  .featuredExerciseDesc {
+    font-size: 0.95rem;
+  }
+}

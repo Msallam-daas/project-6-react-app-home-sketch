@@ -1,0 +1,91 @@
+.sketchesContainer {
+  display: grid;
+  grid-template-areas: "sketcheContainer sketcheContainer sketcheContainer";
+  margin-bottom: 3rem;
+}
+.SketchesFeaturedTitle {
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 5rem;
+}
+.line {
+  display: block;
+  height: 5px;
+  margin: 25px auto 70px auto;
+  width: 80px;
+  background-color: #ef5921;
+}
+.sketcheContainer {
+  color: #000000;
+  border: 1px solid #000000;
+  justify-self: center;
+  text-align: center;
+  transition: 0.5s;
+  margin-bottom: 3rem;
+}
+.sketcheContainer:hover {
+  transform: scale(1.03);
+}
+.sketcheContainerPhoto img {
+  width: 450px;
+  border-radius: 5px;
+  height: 600px;
+}
+.SketcheFeaturedTitle {
+  font-size: 2.75rem;
+  margin-top: 0.5rem;
+}
+
+.SketcheFeaturedInfo {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 47%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.SketcheFeaturedInfo a {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.SketcheFeaturedInfo button {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.SketcheFeaturedInfo a:hover {
+  background-color: rgb(221, 44, 44);
+}
+.SketcheFeaturedInfo a:hover button {
+  background-color: rgb(221, 44, 44);
+}
+.SketcheFeaturedInfo span {
+  font-size: 1.85rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+@media screen and (max-width: 1420px) {
+  .sketchesContainer {
+    grid-template-areas:
+      "sketcheContainer"
+      "sketcheContainer"
+      "sketcheContainer";
+  }
+  .sketcheContainerPhoto img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .sketcheContainerPhoto img {
+    width: 220px;
+  }
+}

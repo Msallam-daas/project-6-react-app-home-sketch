@@ -1,0 +1,84 @@
+.ExerciseDetailesContainer {
+  display: grid;
+  grid-template-areas: "ExerciseDetailesContainerPhoto ExerciseDetailesInfo";
+  align-items: center;
+  width: 80%;
+  margin: 5rem auto;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+.ExerciseDetailesContainerPhoto {
+  grid-area: "ExerciseDetailesContainerPhoto";
+  width: 400px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.ExerciseDetailesContainerPhoto img:hover {
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+.ExerciseDetailesContainerPhoto img {
+  width: 400px;
+  height: 400px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.ExerciseDetailesInfo {
+  grid-area: "ExerciseDetailesInfo";
+  width: 60%;
+  margin: 0 auto;
+}
+.ExerciseDetailesTitle {
+  font-size: 4rem;
+}
+.ExerciseDetailesDesc {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.ExerciseDetailesPrice {
+  font-size: 2.5rem;
+  display: block;
+  margin-top: 1rem;
+}
+.bookExerciseBtn {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+.bookExerciseBtn:hover {
+  background-color: rgb(221, 44, 44);
+}
+@media screen and (max-width: 970px) {
+  .ExerciseDetailesContainer {
+    grid-template-areas:
+      "ExerciseDetailesContainerPhoto"
+      "ExerciseDetailesInfo";
+  }
+  .ExerciseDetailesContainerPhoto img {
+    width: 100%;
+  }
+  .ExerciseDetailesContainerPhoto {
+    width: 100%;
+  }
+  .ExerciseDetailesInfo {
+    width: 80%;
+    margin-left: 1.5rem;
+  }
+  .ExerciseDetailesTitle {
+    font-size: 2.5rem;
+  }
+  .ExerciseDetailesDesc {
+    font-size: 1rem;
+  }
+  .ExerciseDetailesPrice {
+    font-size: 2rem;
+  }
+}

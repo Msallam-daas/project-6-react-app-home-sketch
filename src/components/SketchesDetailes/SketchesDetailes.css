@@ -1,0 +1,84 @@
+.sketchesDetailesContainer {
+  display: grid;
+  grid-template-areas: "sketchesDetailesPhotos sketchesDetailesInfo";
+  align-items: center;
+  width: 80%;
+  margin: 5rem auto;
+  background-color: #000000;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  /* height: 507.2px; */
+}
+.sketchesDetailesPhotos {
+  grid-area: "sketchesDetailesPhotos";
+  width: 400px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.sketchesDetailesPhotos img:hover {
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+.sketchesDetailesPhotos img {
+  width: 400px;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+.sketchesDetailesInfo {
+  grid-area: "sketchesDetailesInfo";
+  width: 60%;
+  margin: 0 auto;
+}
+.sketchesDetailesTitle {
+  font-size: 4rem;
+}
+.sketchesDetailesDesc {
+  font-size: 2rem;
+  font-weight: 300;
+}
+.sketchesDetailesPrice {
+  font-size: 2.5rem;
+  display: block;
+  margin-top: 1rem;
+}
+.buySketchBtn {
+  text-decoration: none;
+  color: white;
+  background-color: #ef5921;
+  border: none;
+  padding: 0.6em;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 2rem 0;
+}
+.buySketchBtn:hover {
+  background-color: rgb(221, 44, 44);
+}
+@media screen and (max-width: 970px) {
+  .sketchesDetailesContainer {
+    grid-template-areas:
+      "sketchesDetailesPhotos"
+      "sketchesDetailesInfo";
+  }
+  .sketchesDetailesPhotos img {
+    width: 100%;
+  }
+  .sketchesDetailesPhotos {
+    width: 100%;
+  }
+  .sketchesDetailesInfo {
+    width: 80%;
+    margin-left: 1.5rem;
+  }
+  .sketchesDetailesTitle {
+    font-size: 2.5rem;
+  }
+  .sketchesDetailesDesc {
+    font-size: 1rem;
+  }
+  .sketchesDetailesPrice {
+    font-size: 2rem;
+  }
+}
