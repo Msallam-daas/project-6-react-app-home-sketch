@@ -126,8 +126,8 @@ function Cart({ setLoggedUser }) {
             )}
           </span>
           <Link to="/sketches">
-            <button type="button" className="confirm-buy">
-              Go to Checkout
+            <button type="button" className="buySketchBtn">
+              Go to Shop
             </button>
           </Link>
         </div>
