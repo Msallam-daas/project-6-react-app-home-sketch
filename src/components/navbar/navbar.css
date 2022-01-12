@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&family=Saira:wght@200&display=swap");
 .nav {
   display: flex;
   align-items: center;
@@ -103,9 +102,6 @@
     justify-content: center;
     margin-right: 0;
   }
-  /*  .header .nav ul .active {
-      display: block;
-    } */
   .nav ul li {
     margin: 0.9rem 0;
   }

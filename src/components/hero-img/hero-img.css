@@ -1,6 +1,5 @@
 .home-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   grid-template-areas: "home-left home-right";
   justify-content: space-around;
   align-items: center;
@@ -9,7 +8,6 @@
 }
 .home-left {
   color: white;
-  /* width: 30%; */
   grid-area: home-left;
 }
 .home-left h5 {
@@ -50,7 +48,6 @@
 }
 @media screen and (max-width: 925px) {
   .home-container {
-    grid-template-columns: 1fr;
     grid-template-areas:
       "home-left"
       "home-right";

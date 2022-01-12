@@ -1,6 +1,5 @@
 import React from "react";
 import "./footer.css";
-import { ReactComponent as Logo } from "../../assets/logo_g2a_white.svg";
 
 function Footer() {
   return (
@@ -40,7 +39,7 @@ function Footer() {
               <i className="fas fa-map-marker-alt"></i> Amman/Jordan
             </p>
             <p className="contatUsPara">
-              <i className="fas fa-phone-alt"></i> +962798861423
+              <i className="fas fa-phone-alt"></i> +962712066002
             </p>
             <p className="contatUsPara">
               <i className="fas fa-envelope"></i> homesketch@gmail.com

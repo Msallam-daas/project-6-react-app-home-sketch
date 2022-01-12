@@ -13,7 +13,7 @@ function HeroImage() {
         </Link>
       </div>
       <div class="home-right">
-        <img src="images/cover2.png" alt="controller" />
+        <img src="images/cover2.png" alt="Trucke pic" />
       </div>
     </div>
   );
