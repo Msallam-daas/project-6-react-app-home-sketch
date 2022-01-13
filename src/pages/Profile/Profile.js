@@ -29,12 +29,9 @@ export default function Profile() {
           <h2>My Cart Items</h2>
           <span className="sectionline" />
           <div className="cartInfoContainer">
-            {allUsers.cartItems.map((cartitem, index) => {
+            {allUsers.cartItems.map((cartitem) => {
               return (
                 <>
-                  {/* <div className="cartItemImage">
-                    <img src={cartitem.image}></img>
-                  </div> */}
                   <p>Sketch Name : {cartitem.title}</p>
                   <p>Sketch Quantity : {cartitem.quantity}X</p>
                   <span className="cartline" />
@@ -47,7 +44,7 @@ export default function Profile() {
           <h2>Reservations</h2>
           <span className="sectionline" />
           <div className="reservationsInfoContainer">
-            {allUsers.appointments.map((all, index) => {
+            {allUsers.appointments.map((all) => {
               return (
                 <>
                   <p>Exercise Name : {all.service}</p>
